@@ -31,8 +31,8 @@ void setup(){
 void loop(){
     char getInfo[6] = "<01>\r";
     char getSpeed[6] = "<40>\r";
+    delay(100);
     sendCommand(getSpeed, 5);
-    Serial.println(buf);
 
     delay(3000);
 }
